@@ -126,6 +126,7 @@ const dados = [
 const tabela = document.getElementById("tabela");
 
 tabela.classList.add("table");
+tabela.classList.add("table-responsive");
 
 // Cria as células da tabela com base nos dados do JSON
 dados.forEach((item) => {

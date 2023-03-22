@@ -5,10 +5,10 @@ table {
 
 h1 {
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
+body {
   padding-left: 4vh;
   padding-right: 4vh;
 }
@@ -17,7 +17,8 @@ body{
   width: 100%;
   border-collapse: collapse;
 }
-th, td {
+th,
+td {
   text-align: left;
   padding: 8px;
   border: 1px solid #ddd;
@@ -29,7 +30,6 @@ th {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
 
 /* td,
 th {
@@ -65,8 +65,6 @@ td.flag img {
   max-width: 50px;
 }
 
-
-
 input[type="text"] {
   padding: 10px;
   border-radius: 5px;
@@ -82,24 +80,44 @@ input[type="text"] {
   font-size: 16px;
 }
 
-
 @media only screen and (max-width: 768px) {
-  table {
-    font-size: 14px;
+  /* Responsive Table */
+  .table-responsive {
+    display: block;
+    position: relative;
+    width: 100%;
   }
-  
-  td,
-  th {
-    padding: 6px;
+
+  .table-responsive thead,
+  .table-responsive tbody,
+  .table-responsive th,
+  .table-responsive td,
+  .table-responsive tr {
+    display: block;
   }
-  
-  td img {
-    margin-right: 5px;
+  .table-responsive td,
+  .table-responsive th {
+    height: 35px;
   }
-  
-  td.flag img {
-    max-width: 30px;
-    padding: 2px;
+
+  .table-responsive thead {
+    float: left;
+  }
+
+  .table-responsive tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+
+  .table-responsive tbody tr {
+    display: inline-block;
+  }
+
+  .table td:last-child {
+    border-right: #999999 solid 1px;
   }
 }
 
@@ -107,16 +125,16 @@ input[type="text"] {
   table {
     font-size: 12px;
   }
-  
+
   td,
   th {
     padding: 4px;
   }
-  
+
   td img {
     margin-right: 2px;
   }
-  
+
   td.flag img {
     max-width: 25px;
     padding: 1px;
