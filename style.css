@@ -1,0 +1,124 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  padding-left: 4vh;
+  padding-right: 4vh;
+}
+
+#tabela {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #4287f5;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+/* td,
+th {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+} */
+
+td a {
+  color: #333;
+}
+
+td img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+td.flag {
+  text-align: center;
+}
+
+td.flag img {
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  padding: 4px;
+  max-width: 50px;
+}
+
+
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+#busca {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+  
+  td,
+  th {
+    padding: 6px;
+  }
+  
+  td img {
+    margin-right: 5px;
+  }
+  
+  td.flag img {
+    max-width: 30px;
+    padding: 2px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  table {
+    font-size: 12px;
+  }
+  
+  td,
+  th {
+    padding: 4px;
+  }
+  
+  td img {
+    margin-right: 2px;
+  }
+  
+  td.flag img {
+    max-width: 25px;
+    padding: 1px;
+  }
+}
